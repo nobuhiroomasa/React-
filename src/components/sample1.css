@@ -1,0 +1,102 @@
+.Sample1{
+    display: flex;
+    margin: 50px 400px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.Choice{
+    display: flex;
+    margin: 50px 400px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto 300px;
+}
+.title-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .title-2 a {
+    text-decoration: none;
+  }
+  
+  .title1, .title2 {
+    padding: 10px; /* 必要に応じて調整 */
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .vs {
+    margin: 0 20px; /* 必要に応じて調整 */
+  }
+  
+  .post2-2 ,.post2-1{
+    margin: 30px 0;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start; /*縦位置を上揃え*/
+  /*   align-items: center; */ /*縦位置を真ん中揃え*/
+    margin-right:25px;
+
+  }
+  .post2-2{
+    justify-content:flex-end;
+  }
+  .posts2{
+    overflow: auto;
+    height: 500px;
+    width: 500px;
+  }
+  .post {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(149, 42, 42, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 30px;
+    border-radius: 10px;
+    min-width: 500px;
+    background-color: rgb(47, 82, 186);
+  }
+
+  .coment {
+    max-width:500px; /*最大幅は任意*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 17px 13px 15px 18px;
+    border-radius: 12px;
+    background: #99dddd;/*色は任意*/
+    box-sizing:border-box;
+    margin:0 !important;
+    line-height:1.5;
+  /*   align-items: center; */
+  }
+  .coment p{
+    margin:8px 0 0 !important; 
+  }
+  .coment p:first-child{
+    margin-top:0 !important;
+  }
+  .coment:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+  /*   margin-top:-3px;  */
+  }
+  .post2-1 .coment:after {
+    left: -26px;
+    border-right: 22px solid #99dddd;
+  }
+
+  .post2-2 .coment:after{
+    right: -26px;
+    border-left: 22px solid #99dddd;
+  }
+
+  .commentinput2{
+    width: 400px;
+  }

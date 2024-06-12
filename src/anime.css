@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ページの高さいっぱいに要素を配置するため */
+  }
+  
+  .box1,
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* 要素の間に少しの間隔を空ける */
+    font-size: 24px;
+    transition: transform 1s ease-in-out; /* アニメーションの設定 */
+  }
+  
+  /* アニメーション時のスタイル */
+  .box1.animated {
+    transform: translateX(200px); /* X軸方向に移動 */
+  }
+  
+  .box2.animated {
+    transform: translateX(-200px); /* X軸方向に移動 */
+  }
+  
