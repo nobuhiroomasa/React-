@@ -37,7 +37,11 @@ function Choice(){
       return(
         <div>
             <Main />
+
             <div className="Choice">
+                <div className="Choice-lines">
+                    <h1>どちらを選びますか？</h1>
+                </div>
                 {post?(
                     <div className="title-2">
                         <Link to={'/components/'+ postId+"/"+ 1}>
@@ -46,7 +50,7 @@ function Choice(){
                             </div>
                             
                         </Link>
-                            <h1 className="vs">vs</h1>
+                            <h1 className="vs">or</h1>
                         <Link to={'/components/'+ postId+"/"+ 2}>
                             <div className="title2">
                                 <h1>{post.title2}</h1>
